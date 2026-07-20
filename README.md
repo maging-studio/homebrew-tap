@@ -9,14 +9,14 @@ A native Markdown viewer and Quick Look extension for macOS —
 
 ```sh
 brew tap maging-studio/tap
+brew trust maging-studio/tap
 brew install glance
 ```
 
-Or in one line, without tapping first:
-
-```sh
-brew install maging-studio/tap/glance
-```
+Homebrew 6 refuses to load casks from a third-party tap until you trust it, so
+the `brew trust` line is required — without it, `brew install` stops with
+*"Refusing to load cask … from untrusted tap"*. It's a one-time step per
+machine.
 
 Upgrades come through Homebrew like anything else:
 
