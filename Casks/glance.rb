@@ -1,6 +1,6 @@
 cask "glance" do
-  version "0.2.0"
-  sha256 "76f117d8cc0792faf7bf12d3e0473bc77812d9afd5dbc6198b4282ce7d5bef80"
+  version "0.2.1"
+  sha256 "b71d81620b63244206b3f12c3856947bb6542675cae7350d238065e27c3b8413"
 
   url "https://github.com/maging-studio/glance/releases/download/v#{version}/Glance-#{version}.dmg",
       verified: "github.com/maging-studio/glance/"
