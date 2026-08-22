@@ -1,6 +1,6 @@
 cask "glance" do
-  version "0.2.1"
-  sha256 "b71d81620b63244206b3f12c3856947bb6542675cae7350d238065e27c3b8413"
+  version "0.2.2"
+  sha256 "74548bcf5ff5217178528e44b2e3d397e3978542dadf111080da0862a0e5070a"
 
   url "https://github.com/maging-studio/glance/releases/download/v#{version}/Glance-#{version}.dmg",
       verified: "github.com/maging-studio/glance/"
@@ -13,6 +13,7 @@ cask "glance" do
     strategy :github_latest
   end
 
+  depends_on arch: :arm64
   depends_on macos: :sonoma
 
   app "Glance.app"
